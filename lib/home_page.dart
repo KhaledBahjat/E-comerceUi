@@ -43,6 +43,24 @@ class HomePage extends StatelessWidget {
       "subtitle": "Subtitle",
       "price": "350",
     },
+      {
+      "image": "images/airpods.jpg",
+      "title": "Apple Airpods",
+      "subtitle": "Subtitle",
+      "price": "350",
+    },
+      {
+      "image": "images/apple.jpg",
+      "title": "Apple Watch",
+      "subtitle": "Subtitle",
+      "price": "350",
+    },
+      {
+      "image": "images/perfum.jpg",
+      "title": "Perfum",
+      "subtitle": "Subtitle",
+      "price": "350",
+    },
   ];
 
   @override
