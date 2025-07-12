@@ -1,4 +1,5 @@
 // import 'package:flutter/cupertino.dart';
+import 'package:ecomerce_app/detils.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:ecomerce_app/custom/custom_column.dart';
@@ -62,7 +63,6 @@ class HomePage extends StatelessWidget {
       "price": "350",
     },
   ];
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -152,11 +152,19 @@ class HomePage extends StatelessWidget {
                 mainAxisExtent: 230,
               ),
               itemCount: proudcts.length,
-              itemBuilder: (context, index) => CustomCard(
-                img: proudcts[index]["image"],
-                title: proudcts[index]["title"],
-                subtitle: proudcts[index]["subtitle"],
-                price: proudcts[index]["price"],
+              itemBuilder: (context, index) => InkWell(
+                onTap: () => Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) =>
+                        ItemDetails(itemDetils: proudcts[index]),
+                  ),
+                ),
+                child: CustomCard(
+                  img: proudcts[index]["image"],
+                  title: proudcts[index]["title"],
+                  subtitle: proudcts[index]["subtitle"],
+                  price: proudcts[index]["price"],
+                ),
               ),
             ),
           ],
