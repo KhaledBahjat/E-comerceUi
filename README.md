@@ -65,8 +65,8 @@ flutter run
 
 Feel free to reach out or connect:
 
-- [LinkedIn](https://linkedin.com/in/yourprofile)
-- Email: your_email@example.com
+- [LinkedIn](www.linkedin.com/in/khaled-bahjat-7657a3357)
+- Email: khaledbahjat0@gmail.com
 
 ---
 
