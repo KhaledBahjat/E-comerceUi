@@ -43,19 +43,19 @@ class HomePage extends StatelessWidget {
       "subtitle": "Subtitle",
       "price": "350",
     },
-      {
+    {
       "image": "images/airpods.jpg",
       "title": "Apple Airpods",
       "subtitle": "Subtitle",
       "price": "350",
     },
-      {
+    {
       "image": "images/apple.jpg",
       "title": "Apple Watch",
       "subtitle": "Subtitle",
       "price": "350",
     },
-      {
+    {
       "image": "images/perfum.jpg",
       "title": "Perfum",
       "subtitle": "Subtitle",
@@ -66,6 +66,21 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      bottomNavigationBar: BottomNavigationBar(
+        iconSize: 35,
+        selectedItemColor: Colors.amber,
+        items: [
+          BottomNavigationBarItem(icon: Icon(Icons.home_outlined), label: "*"),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.shopping_bag_outlined),
+            label: "*",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.person_2_outlined),
+            label: "*",
+          ),
+        ],
+      ),
       body: Container(
         padding: EdgeInsets.all(20),
         child: ListView(
@@ -88,7 +103,10 @@ class HomePage extends StatelessWidget {
                 ),
                 Padding(
                   padding: EdgeInsets.symmetric(horizontal: 10),
-                  child: Icon(Icons.menu, size: 40),
+                  child: IconButton(
+                    onPressed: () {},
+                    icon: Icon(Icons.menu, size: 40),
+                  ),
                 ),
               ],
             ),
@@ -131,7 +149,7 @@ class HomePage extends StatelessWidget {
               shrinkWrap: true,
               gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 2,
-                mainAxisExtent: 240,
+                mainAxisExtent: 230,
               ),
               itemCount: proudcts.length,
               itemBuilder: (context, index) => CustomCard(
