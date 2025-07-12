@@ -43,7 +43,7 @@ lib/
 To run the project:
 
 ```bash
-git clone https://github.com/yourusername/ecommerce_app.git
+git clone  https://github.com/KhaledBahjat/E-comerceUi.git
 cd ecommerce_app
 flutter pub get
 flutter run
